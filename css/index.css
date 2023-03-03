@@ -3,7 +3,6 @@
 :root {
     --fonte-principal: "Josefin Sans";
     --fonte-secundaria: "Alata";
-    --cor-de-fundo: #F2F2F2;
     --preto: #000000;
     --branco: #FFFFFF;
 }
@@ -13,7 +12,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     color: var(--preto);
-    background-color: var(--cor-de-fundo);
+    background-color: var(--branco);
 }
 
 /* CABEÇALHO */
@@ -45,14 +44,60 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 1.5em;
+    margin-top: 5rem;
 }
 
 .principal__imagem {
-    width: 80vw;
+    max-width: 90vw;
 }
 
 .principal__titulo {
     text-transform: uppercase;
     font-size: 32px;
     font-weight: 300;
+    text-align: center;
+    padding: 0 1rem;
 }
+
+.principal__texto {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    text-align: center;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-size: 15px;
+    padding: 0 4rem;
+}
+
+/* SEÇÃO DE MAIS JOGADOS */
+
+.jogos__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 3rem;
+}
+
+.jogos__titulo {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+
+.jogos__imagem {
+    max-width: 327px;
+    filter: brightness(65%);
+}
+
+.jogos__texto {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    /* color: var(--branco); */
+}
+
