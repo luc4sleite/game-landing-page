@@ -1,115 +1,142 @@
 @import url("./menu.css");
 
 :root {
-    --fonte-principal: "Josefin Sans";
-    --fonte-secundaria: "Alata";
-    --preto: #000000;
-    --branco: #FFFFFF;
+  --fonte-principal: "Josefin Sans";
+  --fonte-secundaria: "Alata";
+  --preto: #000000;
+  --branco: #ffffff;
 }
 
 body {
-    font-family: var(--fonte-principal);
-    font-weight: 400;
-    font-size: 15px;
-    color: var(--preto);
-    background-color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--preto);
+  background-color: var(--branco);
 }
 
 /* CABEÇALHO */
 
 .cabecalho__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: start;
-    background-image: url("../images/mobile/image-hero.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 650px;
-    padding: 1.5rem 2rem 0 2rem;
+  display: flex;
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.cabecalho__container_stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2.4rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.cabecalho__banner {
+  margin-top: 10rem;
+  padding-top: 2.4rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 
 .cabecalho__titulo {
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 300;
-    color: var(--branco);
-    border: 2px solid var(--branco);
-    padding: 1.5rem;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--branco);
+  border: 2px solid var(--branco);
+  padding: 1.5rem;
 }
 
 /* SEÇÃO PRINCIPAL */
 
 .principal__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1.5em;
-    margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5em;
+  margin-top: 5rem;
 }
 
 .principal__imagem {
-    max-width: 90vw;
+  max-width: 90vw;
 }
 
 .principal__titulo {
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 300;
-    text-align: center;
-    padding: 0 1rem;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .principal__texto {
-    font-family: var(--fonte-secundaria);
-    font-weight: 400;
-    text-align: center;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    font-size: 15px;
-    padding: 0 4rem;
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  text-align: center;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  font-size: 15px;
+  padding: 0 4rem;
 }
 
 /* SEÇÃO DE MAIS JOGADOS */
 
 .jogos__container {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .itens__container {
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 
 .jogos__lista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    row-gap: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 2rem;
+}
+
+.jogos__itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .jogos__titulo {
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 300;
-    text-align: center;
-    padding: 2rem 1rem;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-
 .jogos__imagem {
-    max-width: 327px;
-    filter: brightness(65%);
-    position: absolute;
+  filter: brightness(65%);
 }
 
 .jogos__texto {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 300;
-    color: var(--branco);
-    position: absolute;
-    left: 15px;
-    top: 50px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--branco);
 }
 
+/* UTILS */
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
