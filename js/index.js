@@ -1,14 +1,15 @@
-const games = [{
+const games = [
+  {
     imageUrl: "./images/mobile/image-elden-ring.jpg",
-    title: "Elden Ring"
+    title: "Elden Ring",
   },
   {
     imageUrl: "./images/mobile/image-mwii.jpg",
-    title: "Call of Duty: Modern Warfare 2"
+    title: "Call of Duty: Modern Warfare 2",
   },
   {
     imageUrl: "./images/mobile/image-fifa.jpg",
-    title: "FIFA 23"
+    title: "FIFA 23",
   },
 ];
 
@@ -16,7 +17,7 @@ window.addEventListener("load", main);
 
 function main() {
   const listGamesElement = document.querySelector(".jogos__lista");
-  games.forEach(game => {
+  games.forEach((game) => {
     const itemList = document.createElement("li");
     const itemContainer = document.createElement("div");
     const itemImage = document.createElement("img");
@@ -33,13 +34,27 @@ function main() {
 
     itemList.classList.add("jogos__itens", "w-100");
 
-
     itemContainer.appendChild(itemImage);
-    // itemContainer.appendChild(itemTitle);
+    itemContainer.appendChild(itemTitle);
 
     itemList.appendChild(itemContainer);
 
     listGamesElement.appendChild(itemList);
+  });
 
-  })
+  const itemList = document.createElement("li");
+  const itemButton = document.createElement("button");
+
+  itemButton.textContent = "Veja mais";
+  itemButton.classList.add("jogos__botao");
+
+  itemButton.addEventListener("click", onClickSeeAll);
+
+  itemList.appendChild(itemButton);
+
+  listGamesElement.appendChild(itemList);
+}
+
+function onClickSeeAll() {
+  console.log("Fui clicado");
 }
