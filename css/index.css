@@ -73,11 +73,19 @@ body {
 /* SEÇÃO DE MAIS JOGADOS */
 
 .jogos__container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
     margin-top: 3rem;
+}
+
+.itens__container {
+    position: relative;
+}
+
+.jogos__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    row-gap: 10rem;
 }
 
 .jogos__titulo {
@@ -92,12 +100,16 @@ body {
 .jogos__imagem {
     max-width: 327px;
     filter: brightness(65%);
+    position: absolute;
 }
 
 .jogos__texto {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 300;
-    /* color: var(--branco); */
+    color: var(--branco);
+    position: absolute;
+    left: 15px;
+    top: 50px;
 }
 
