@@ -11,6 +11,26 @@ const games = [
     imageUrl: "./images/mobile/image-fifa.jpg",
     title: "FIFA 23",
   },
+  {
+    imageUrl: "./images/mobile/image-gtav.jpg",
+    title: "GTA V",
+  },
+  {
+    imageUrl: "./images/mobile/image-fortnite.jpg",
+    title: "Fortnite",
+  },
+  {
+    imageUrl: "./images/mobile/image-minecraft.jpg",
+    title: "Minecraft",
+  },
+  {
+    imageUrl: "./images/mobile/image-overwatch.jpg",
+    title: "Overwatch 2",
+  },
+  {
+    imageUrl: "./images/mobile/image-valorant.jpg",
+    title: "Valorant",
+  },
 ];
 
 window.addEventListener("load", main);
@@ -57,4 +77,21 @@ function main() {
 
 function onClickSeeAll() {
   console.log("Fui clicado");
+}
+
+const buttonMenu = document.querySelector(".cabecalho__menu-botao");
+const buttonClose = document.querySelector(".cabecalho__menu-close");
+
+buttonMenu.addEventListener("click", onClickMenu);
+
+buttonClose.addEventListener("click", onClickClose);
+
+function onClickMenu() {
+  const menu = document.querySelector(".menu__container");
+  menu.classList.remove("menu__container-desativado");
+}
+
+function onClickClose() {
+  const menu = document.querySelector(".menu__container");
+  menu.classList.add("menu__container-desativado");
 }

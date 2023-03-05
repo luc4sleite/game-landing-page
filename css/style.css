@@ -88,6 +88,7 @@ body {
 
 .jogos__container {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .itens__container {
@@ -102,6 +103,8 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   row-gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .jogos__itens {
@@ -130,6 +133,51 @@ body {
   font-weight: 300;
   color: var(--branco);
   margin: 0 1rem 1rem 0.5rem;
+}
+
+.jogos__botao {
+  text-transform: uppercase;
+  font-family: var(--fonte-secundaria);
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid var(--preto);
+  padding: 0.5rem 1.5rem;
+}
+
+
+/* RODAPÉ */
+
+.rodape__container {
+  background-color: var(--preto);
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.rodape__lista {
+  padding-top: 1rem;
+}
+
+.rodape__menu, .rodape__itens {
+  padding: 0.75rem 0;
+}
+
+.contatos__lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contatos__itens {
+  padding: 0.5rem;
+}
+
+.attribution p {
+  padding-top: 1rem;
 }
 
 /* UTILS */

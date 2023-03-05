@@ -17,54 +17,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>Best Games</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Loopstudios</title>
   </head>
 
   <body>
     <header class="cabecalho__container">
       <div class="cabecalho__container_stack">
-        <img
-          src="./images/loopstudios.svg"
-          alt="Logo do site"
-        />
+        <img src="./images/loopstudios.svg" alt="Logo do site"/>
         <img
           src="./images/icon-hamburger.svg"
           alt="ícone do menu"
           height="24"
           width="24"
+          class="cabecalho__menu-botao"
         />
       </div>
 
-      <aside class="menu__container">
-        <ul class="menu__lista">
-          <li>
-            <a href="#" class="menu__itens">
-              <span>Sobre nós</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="menu__itens">
-              <span>Destaques</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="menu__itens">
-              <span>Eventos</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="menu__itens">
-              <span>Jogos</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="menu__itens">
-              <span>Ajuda</span>
-            </a>
-          </li>
-        </ul>
-      </aside>
+      <div class="menu__container menu__container-desativado">
+        <div class="menu__container_stack">
+          <img src="./images/loopstudios.svg" alt="Logo do site"/>
+          <img src="./images/icon-close.svg" alt="Ícone para fechar o menu" height="24" width="24" class="cabecalho__menu-close"> 
+        </div>
+        <aside>
+          <ul class="menu__lista">
+            <li class="menu__itens">
+              <a href="#" >
+                <span>Sobre nós</span>
+              </a>
+            </li>
+            <li class="menu__itens">
+              <a href="#" >
+                <span>Destaques</span>
+              </a>
+            </li>
+            <li class="menu__itens">
+              <a href="#" >
+                <span>Eventos</span>
+              </a>
+            </li>
+            <li class="menu__itens">
+              <a href="#" >
+                <span>Jogos</span>
+              </a>
+            </li>
+            <li class="menu__itens">
+              <a href="#" >
+                <span>Ajuda</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      
       <div class="cabecalho__banner">
         <h1 class="cabecalho__titulo">Momentos incríveis, jogos marcantes</h1>
       </div>
@@ -87,13 +92,13 @@
 
       <section class="jogos__container">
         <h2 class="jogos__titulo">Mais jogados</h2>
-        <ul class="jogos__lista">
-        </ul>
+        <ul class="jogos__lista"></ul>
       </section>
     </main>
-        
+
     <footer class="rodape__container">
-      <section>
+      <section class="rodape__menu">
+        <img src="./images/loopstudios.svg" alt="Logo da Loopstudios" />
         <ul class="rodape__lista">
           <li class="rodape__itens">
             <a href="#">Sobre nós</a>
@@ -116,24 +121,35 @@
       <section class="contatos__container">
         <ul class="contatos__lista">
           <li class="contatos__itens">
-            <a href="#"></a>
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="ícone do facebook"
+            /></a>
           </li>
           <li class="contatos__itens">
-            <a href="#"></a>
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="ícone do twitter"
+            /></a>
           </li>
           <li class="contatos__itens">
-            <a href="#"></a>
+            <a href="#"
+              ><img src="./images/icon-instagram.svg" alt="ícone do instagram"
+            /></a>
           </li>
           <li class="contatos__itens">
-            <a href="#"></a>
+            <a href="#"
+              ><img src="./images/icon-pinterest.svg" alt="ícone do pinterest"
+            /></a>
           </li>
         </ul>
-        <p>© 2023 Best Games. Todos os direitos reservados.</p>
       </section>
 
       <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Lucas Gonçalves Leite</a>.
+        <p>© 2023 Best Games. Todos os direitos reservados.</p>
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a>. Coded by <a href="#">Lucas Gonçalves Leite</a>.
+        </p>
       </div>
     </footer>
 
