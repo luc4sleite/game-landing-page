@@ -148,6 +148,10 @@ body {
   padding: 0.5rem 1.5rem;
 }
 
+.jogos__botao-desktop {
+  display: none;
+}
+
 /* RODAPÉ */
 
 .rodape__container {
@@ -168,6 +172,9 @@ body {
 .rodape__menu,
 .rodape__itens {
   padding: 0.75rem 0;
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .contatos__lista {
@@ -232,10 +239,142 @@ body {
     margin: 7rem 35rem auto 13.5rem;
     padding: 40px;
   }
+
+  /* SEÇÃO PRINCIPAL */
+
+  .principal__container {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+    padding-top: 5rem;
+  }
+  
+  .principal__imagem {
+    position: relative;
+  }
+
+  .principal__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--branco);
+    /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
+    position: absolute;
+    margin-left: 35rem;
+    margin-top: 5rem;
+    margin-right: 10rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+  }
+
+  .principal__titulo {
+    font-size: 48px;
+    text-align: left;
+    padding: 0 0 1rem 0;
+  }
+
+  .principal__texto {
+    text-align: left;
+    font-size: 15px;
+    padding: 0;
+    line-height: 25px;
+  }
+
+  /* SEÇÃO DE MAIS JOGADOS */
+
+  .jogos__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 8rem;
+  }
+
+  .jogos__titulo {
+    font-size: 48px;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .jogos__lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    padding-top: 5rem;
+    width: 100%;
+  }
+
+  .jogos__texto {
+    font-size: 32px;
+    max-width: 256px;
+    margin-top: 22rem;
+  }
+
+  .jogos__itens {
+    padding: 0;
+  }
+
+  .jogos__itens:hover {
+    opacity: 50%;
+    transition: 0.5s;
+  }
+
+  .jogos__texto:hover {
+    color: var(--preto);
+  }
+
+  .itens__container {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .jogos__botao-desktop {
+    display: block;
+    text-transform: uppercase;
+    font-family: var(--fonte-secundaria);
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--preto);
+    padding: 0 3rem;
+    margin: 1.8rem 4rem 1.8rem auto;
+  }
+
+  /* RODAPÉ */
+
+  .rodape__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .rodape__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rodape__lista {
+    display: flex;
+    flex-direction: row;
+  } 
+
+  .rodape__itens {
+    padding-right: 1.5rem;
+  }
+
+  .contatos__itens {
+    justify-self: flex-end;
+  }
   
 }
 
 /* UTILS */
+
+a:hover {
+  text-decoration: underline;
+}
 
 .d-flex {
   display: flex;
