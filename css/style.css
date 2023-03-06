@@ -249,7 +249,7 @@ body {
     margin-bottom: 10rem;
     padding-top: 5rem;
   }
-  
+
   .principal__imagem {
     position: relative;
   }
@@ -358,7 +358,7 @@ body {
   .rodape__lista {
     display: flex;
     flex-direction: row;
-  } 
+  }
 
   .rodape__itens {
     padding-right: 1.5rem;
@@ -367,7 +367,6 @@ body {
   .contatos__itens {
     justify-self: flex-end;
   }
-  
 }
 
 /* UTILS */
