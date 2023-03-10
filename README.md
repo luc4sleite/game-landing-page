@@ -1,111 +1,109 @@
-# Frontend Mentor - Loopstudios landing page solution
+# Game landing page
 
-This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Esta é uma solução para o desafio [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw).
 
-## Table of contents
+## :books:Índice
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
+- [Visão geral](#visão-geral)
+  - [O desafio](#o-desafio)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Meu processo](#meu-processo)
+  - [Construído com](#construído-com)
+  - [O que eu aprendi](#o-que-eu-aprendi)
+  - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## Visão geral
 
-## Overview
+### O desafio
 
-### The challenge
+Usuários poderão:
 
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+- Visualizar de maneira otimizada o site conforme o tamanho da tela do dispositivo
+- Ver os estados diferentes dos elementos interativos na página
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Mobile (375px)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Screenshot 2023-03-10 at 19-17-22 Loopstudios](https://user-images.githubusercontent.com/115735167/224438947-0ed6696e-5d27-4119-8186-fd5af6e0ed3e.png)![Screenshot 2023-03-10 at 19-17-54 Loopstudios](https://user-images.githubusercontent.com/115735167/224438994-9ffa2b72-74d7-4619-900d-133dc7e44168.png)![Screenshot 2023-03-10 at 19-18-19 Loopstudios](https://user-images.githubusercontent.com/115735167/224439010-7163f872-d059-457b-bf94-d354941a5ef1.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+#### Desktop (1440px)
+![Screenshot 2023-03-10 at 19-18-48 Loopstudios](https://user-images.githubusercontent.com/115735167/224439118-39e040c6-5954-4b41-8b1d-2041816dbbd7.png)
+![Screenshot 2023-03-10 at 19-19-14 Loopstudios](https://user-images.githubusercontent.com/115735167/224439126-9c01185f-b2aa-41a7-82a5-7eb0a062af55.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solução URL: [Loopstudios](https://luc4sleite.github.io/game-landing-page/)
+- Live Site URL: [Loopstudios on Vercel](https://game-landing-page-seven.vercel.app)
 
-## My process
+## Meu processo
 
-### Built with
+### Construído com
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Tags HTML5 semânticas
+- CSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Javascript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### O que eu aprendi
 
-### What I learned
+Aprendi a sobrepor um texto em uma imagem utilizando propriedades do CSS como Flexbox
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+A criar uma array contendo as imagens e os títulos através do JS 
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const games = [
+      {
+        imageUrl: "./images/mobile/image-elden-ring.jpg",
+        title: "Elden Ring",
+      },
+      {
+        imageUrl: "./images/mobile/image-mwii.jpg",
+        title: "Call of Duty: Modern Warfare 2",
+      },
+      {
+        imageUrl: "./images/mobile/image-fifa.jpg",
+        title: "FIFA 23",
+      },
+      {
+        imageUrl: "./images/mobile/image-gtav.jpg",
+        title: "GTA V",
+      },
+      {
+        imageUrl: "./images/mobile/image-fortnite.jpg",
+        title: "Fortnite",
+      },
+      {
+        imageUrl: "./images/mobile/image-minecraft.jpg",
+        title: "Minecraft",
+      },
+      {
+        imageUrl: "./images/mobile/image-overwatch.jpg",
+        title: "Overwatch 2",
+      },
+      {
+        imageUrl: "./images/mobile/image-valorant.jpg",
+        title: "Valorant",
+      },
+    ];
+```
+
+E a invocar uma função dependendo do tamanho da tela 
+```js
+function ajustarTela() {
+  var larguraTela = window.innerWidth;
+  
+  if(larguraTela < 1440) {
+    mostraAlgo();
+  } else {
+  mostraOutraCoisa();
+  }
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Desenvolvimento contínuo
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Este projeto demandou muito conhecimento em responsividade e manipulação do DOM, por isso estou focado em aprimorar meus conhecimentos em CSS Flexbox e Grid e também em JavaScript para que eu consiga dar mais dinamismo a página
